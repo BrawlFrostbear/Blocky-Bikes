@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocky Bikes Wiki</title>
+    <style>
+        :root {
+            --mc-green: #4CAF50;
+            --mc-dark: #121212;
+            --mc-gray: #1e1e1e;
+            --text: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--mc-dark); /* Це основний фон */
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка з градієнтом, щоб не залежати від картинок */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d5a2d 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--mc-green);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            background: var(--mc-green);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #000;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--mc-gray); /* Контентна частина */
+            border-radius: 10px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #252525;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid var(--mc-green);
+        }
+
+        h1 { color: var(--mc-green); margin: 0; font-size: 3rem; }
+        
+        .btn-download {
+            display: inline-block;
+            background: #f89406;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 20px; margin-top: auto; }
+    </style>
+</head>
+<body>
+<header>
+    <img src="avatar2.png" style="width:20%; border-radius:5px;">
+    <p id="t-subtitle">	<img src="wiki.png" style="width:10%; border-radius:5px;"></p>
+    <button class="lang-btn" onclick="toggleLang()">UA / EN</button>
+</header>
+<div class="lang-switch">
+
+</div>
+<div style="margin-top: 20px;">
+   
+</div>
+
+<div class="container">
+ <a href="index.html" class="btn-back"><img src="Return to home page.png" style="width:10%; border-radius:5px;"></a>
+</style>
+     <img src="Spare parts.png" style="width:25%; border-radius:5px;">
+		<div class="card-grid">
+        <div class="card">
+        
+            
+            <div class="item-block">
+                <img src="Tools.png" style="width:50%; border-radius:5px;">
+                <h2 id="t1">Tools</h2>
+                <p id="d1">| This item is needed for assembling the engine as well as for assembling the motorcycle.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="Motorcycleassemblytable.png" style="width:50%; border-radius:5px;">
+                <h2 id="t2">Motorcycle assembly table</h2>
+                <p id="d2_1">This is a new profession for a villager</p>
+                <p id="d2_2">| He sells you a motorcycle crankcase to assemble the engine.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="Fork.png" style="width:50%; border-radius:5px;">
+                <h2 id="t3">Fork</h2>
+                <p id="d3">| Fork is needed to assemble a motorcycle.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="KraftFrame.png" style="width:50%; border-radius:5px;">
+                <h2 id="t4">Frame</h2>
+                <p id="d4">| Frame is needed to assemble a motorcycle.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="KraftWheels.png" style="width:50%; border-radius:5px;">
+                <h2 id="t5">Wheels</h2>
+                <p id="d5">| Wheels are needed to assemble a motorcycle.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="KraftConnectingrod.png" style="width:50%; border-radius:5px;">
+                <h2 id="t6">Connecting rod</h2>
+                <p id="d6">| Used to assemble the engine crankcase.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="KraftConventionalpiston.png" style="width:50%; border-radius:5px;">
+                <h2 id="t7">Piston</h2>
+                <p id="d7">| The piston is needed to assemble the engine.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="ConventionalLargepiston.png" style="width:50%; border-radius:5px;">
+                <h2 id="t8">Large piston</h2>
+                <p id="d8">| The Large piston is needed to assemble the engine.|</p>
+            </div>
+
+            <div class="item-block">
+                <img src="AssemblemotorcycleIZHPlanet5.png" style="width:50%; border-radius:5px;">
+                <h2 id="t9">Motorcycle assembly process</h2>
+                <p style="color: red;" <p class="warning-text" id="d9">| Here is an example of assembling IZH Planeta 5, all crafts are the same but you need to install a different engine (for each motorcycle model).|</p>
+                <img src="Crafting_Table_JE4_BE3.png" style="width:15%; border-radius:5px;">
+            </div>
+		
+		 <a href="index.html" class="btn-back"><img src="Return to home page.png" style="width:10%; border-radius:5px;"></a>
+		
+        </div>
+    
+</div>
+
+<footer>
+    <p>© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️</p>
+</footer>
+
+<script>
+    let currentLang = 'en';
+
+    const translations = {
+        en: {
+            t1: "Tools",
+            d1: "| This item is needed for assembling the engine as well as for assembling the motorcycle.|",
+            t2: "Motorcycle assembly table",
+            d2_1: "This is a new profession for a villager",
+            d2_2: "| He sells you a motorcycle crankcase to assemble the engine.|",
+            t3: "Fork",
+            d3: "| Fork is needed to assemble a motorcycle.|",
+            t4: "Frame",
+            d4: "| Frame is needed to assemble a motorcycle.|",
+            t5: "Wheels",
+            d5: "| Wheels are needed to assemble a motorcycle.|",
+            t6: "Connecting rod",
+            d6: "| Used to assemble the engine crankcase.|",
+            t7: "Piston",
+            d7: "| The piston is needed to assemble the engine.|",
+            t8: "Large piston",
+            d8: "| The Large piston is needed to assemble the engine.|",
+            t9: "Motorcycle assembly process",
+            d9: "| Here is an example of assembling IZH Planeta 5, all crafts are the same but you need to install a different engine (for each motorcycle model).|",
+            footer: "© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️"
+        },
+        ua: {
+            t1: "Інструменти",
+            d1: "| Цей предмет необхідний як для збірки двигуна, так і для збірки самого мотоцикла.|",
+            t2: "Стіл збірки мотоциклів",
+            d2_1: "Це нова професія для жителя",
+            d2_2: "| Він продає картери для збірки двигунів.|",
+            t3: "Вилка",
+            d3: "| Вилка необхідна для збірки мотоцикла.|",
+            t4: "Рама",
+            d4: "| Рама необхідна для збірки мотоцикла.|",
+            t5: "Колеса",
+            d5: "| Колеса необхідні для збірки мотоцикла.|",
+            t6: "Шатун",
+            d6: "| Використовується для збірки картера двигуна.|",
+            t7: "Поршень",
+            d7: "| Поршень необхідний для збірки двигуна.|",
+            t8: "Великий поршень",
+            d8: "| Великий поршень необхідний для збірки потужних двигунів.|",
+            t9: "Процес збірки мотоцикла",
+            d9: "| Ось приклад збірки ІЖ Планета 5. Всі крафти однакові, але вам потрібно встановлювати відповідний двигун (для кожної моделі мотоцикла).|",
+            footer: "© 2025-2026 Blocky Bikes - БроулФростбеар🏍️"
+        }
+    };
+
+    function toggleLang() {
+        currentLang = currentLang === 'en' ? 'ua' : 'en';
+        updateContent();
+    }
+
+    function updateContent() {
+        const t = translations[currentLang];
+        
+        // Переклад заголовків (T) та описів (D)
+        document.getElementById('t1').innerText = t.t1;
+        document.getElementById('d1').innerText = t.d1;
+        document.getElementById('t2').innerText = t.t2;
+        document.getElementById('d2_1').innerText = t.d2_1;
+        document.getElementById('d2_2').innerText = t.d2_2;
+        document.getElementById('t3').innerText = t.t3;
+        document.getElementById('d3').innerText = t.d3;
+        document.getElementById('t4').innerText = t.t4;
+        document.getElementById('d4').innerText = t.d4;
+        document.getElementById('t5').innerText = t.t5;
+        document.getElementById('d5').innerText = t.d5;
+        document.getElementById('t6').innerText = t.t6;
+        document.getElementById('d6').innerText = t.d6;
+        document.getElementById('t7').innerText = t.t7;
+        document.getElementById('d7').innerText = t.d7;
+        document.getElementById('t8').innerText = t.t8;
+        document.getElementById('d8').innerText = t.d8;
+        document.getElementById('t9').innerText = t.t9;
+        document.getElementById('d9').innerText = t.d9;
+        document.getElementById('footer-text').innerText = t.footer;
+    }
+</script>
+
+</body>
+</html>
