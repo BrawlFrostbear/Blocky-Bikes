@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocky Bikes Wiki</title>
+    <style>
+        :root {
+            --mc-green: #4CAF50;
+            --mc-dark: #121212;
+            --mc-gray: #1e1e1e;
+            --text: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--mc-dark); /* Це основний фон */
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Шапка з градієнтом, щоб не залежати від картинок */
+        header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d5a2d 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 4px solid var(--mc-green);
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .lang-btn {
+            background: var(--mc-green);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        nav {
+            background: #000;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--mc-gray); /* Контентна частина */
+            border-radius: 10px;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #252525;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid var(--mc-green);
+        }
+
+        h1 { color: var(--mc-green); margin: 0; font-size: 3rem; }
+        
+        .btn-download {
+            display: inline-block;
+            background: #f89406;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 20px; margin-top: auto; }
+    </style>
+</head>
+<body>
+<header>
+    <img src="avatar2.png" style="width:20%; border-radius:5px;">
+    <p id="t-subtitle">	<img src="wiki.png" style="width:10%; border-radius:5px;"></p>
+<button class="lang-btn" onclick="toggleLang()">UA / EN</button>
+</header>
+<div class="lang-switch">
+    
+</div>
+<div style="margin-top: 20px;">
+   
+</div>
+
+<div class="container">
+ <a href="style.css" class="btn-back"><img src="Return to home page.png" style="width:10%; border-radius:5px;"></a>
+  <img src="Craft engines.png" style="width:20%; border-radius:5px;">
+    <div class="card-grid">
+        <div class="card">
+         
+            <img src="KraftEngineIZHPlane5.png" style="width:100%; border-radius:5px;">
+                <h2 id="e1">Kraft Engine IZH Plane 56-1-2-3-4-5</h2>
+                <p class="warning-text" id="w1">| Don't forget to replace the engine for each motorcycle model! |</p>
+           
+
+            <div class="engine-item">
+                <img src="KraftEngineIZHPlanetaSport.png" style="width:100%; border-radius:5px;">
+                <h2 id="e2">Kraft Engine IZH Planeta Sport-IZH K16</h2>
+                <p class="warning-text" id="w2">| Don't forget to replace the engine for each motorcycle model! |</p>
+            
+
+            <div class="engine-item">
+                <img src="KraftEngineIZHJupiter5.png" style="width:100%; border-radius:5px;">
+                <h2 id="e3">Kraft Engine IZH Jupiter 6-5-4-3-2-1</h2>
+                <p class="warning-text" id="w3">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineJawa250.png" style="width:100%; border-radius:5px;">
+                <h2 id="e4">Kraft Engine Jawa 250</h2>
+                <p class="warning-text" id="w4">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineJawa350.png" style="width:100%; border-radius:5px;">
+                <h2 id="e5">Kraft Engine Jawa 350-634-638-640</h2>
+                <p class="warning-text" id="w5">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineMinsk.png" style="width:100%; border-radius:5px;">
+                <h2 id="e6">Kraft Engine Minsk</h2>
+                <p class="warning-text" id="w6">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineMT10.png" style="width:100%; border-radius:5px;">
+                <h2 id="e7">Kraft Engine MT10</h2>
+                <p class="warning-text" id="w7">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineMzEtz250.png" style="width:100%; border-radius:5px;">
+                <h2 id="e8">Kraft Engine Mz Etz 250</h2>
+                <p class="warning-text" id="w8">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineBMW1000RR.png" style="width:100%; border-radius:5px;">
+                <h2 id="e9">Kraft Engine BMW 1000 RR</h2>
+                <p class="warning-text" id="w9">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineKawasakiH2R.png" style="width:100%; border-radius:5px;">
+                <h2 id="e10">Kraft Engine Kawasaki H2R</h2>
+                <p class="warning-text" id="w10">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineHondaCB500.png" style="width:100%; border-radius:5px;">
+                <h2 id="e11">Kraft Engine Honda CB500</h2>
+                <p class="warning-text" id="w11">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEngineSuzukiGS500.png" style="width:100%; border-radius:5px;">
+                <h2 id="e12">Kraft Engine Suzuki GS500</h2>
+                <p class="warning-text" id="w12">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftEnginePannoniaT5.png" style="width:100%; border-radius:5px;">
+                <h2 id="e13">Kraft Engine Pannonia T5</h2>
+                <p class="warning-text" id="w13">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+
+            <div class="engine-item">
+                <img src="KraftengineSimsons51.png" style="width:100%; border-radius:5px;">
+                <h2 id="e14">Kraft Engine Simson s51</h2>
+                <p class="warning-text" id="w14">| Don't forget to replace the engine for each motorcycle model! |</p>
+            </div>
+			
+			 <a href="style.css" class="btn-back"><img src="Return to home page.png" style="width:2%; border-radius:5px;"></a>
+			 
+        </div>
+    
+</div>
+
+<footer>
+    <p>© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️</p>
+	</footer>
+
+<script>
+    let currentLang = 'en';
+
+    const translations = {
+        en: {
+            warn: "| Don't forget to replace the engine for each motorcycle model! |",
+            e1: "Kraft Engine IZH Plane 56-1-2-3-4-5",
+            e2: "Kraft Engine IZH Planeta Sport-IZH K16",
+            e3: "Kraft Engine IZH Jupiter 6-5-4-3-2-1",
+            e4: "Kraft Engine Jawa 250",
+            e5: "Kraft Engine Jawa 350-634-638-640",
+            e6: "Kraft Engine Minsk",
+            e7: "Kraft Engine MT10",
+            e8: "Kraft Engine Mz Etz 250",
+            e9: "Kraft Engine BMW 1000 RR",
+            e10: "Kraft Engine Kawasaki H2R",
+            e11: "Kraft Engine Honda CB500",
+            e12: "Kraft Engine Suzuki GS500",
+            e13: "Kraft Engine Pannonia T5",
+            e14: "Kraft Engine Simson s51",
+            footer: "© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️"
+        },
+        ua: {
+            warn: "| Не забудьте замінити двигун для кожної моделі мотоцикла! |",
+            e1: "Двигун ІЖ Планета 56-1-2-3-4-5",
+            e2: "Двигун ІЖ Планета Спорт-ІЖ К16",
+            e3: "Двигун ІЖ Юпітер 6-5-4-3-2-1",
+            e4: "Двигун Ява 250",
+            e5: "Двигун Ява 350-634-638-640",
+            e6: "Двигун Мінськ",
+            e7: "Двигун МТ10",
+            e8: "Двигун Mz Etz 250",
+            e9: "Двигун BMW 1000 RR",
+            e10: "Двигун Kawasaki H2R",
+            e11: "Двигун Honda CB500",
+            e12: "Двигун Suzuki GS500",
+            e13: "Двигун Pannonia T5",
+            e14: "Двигун Simson s51",
+            footer: "© 2025-2026 Blocky Bikes - БроулФростбеар🏍️"
+        }
+    };
+
+    function toggleLang() {
+        currentLang = currentLang === 'en' ? 'ua' : 'en';
+        updateContent();
+    }
+
+    function updateContent() {
+        const t = translations[currentLang];
+        
+        // Переклад заголовків
+        for (let i = 1; i <= 14; i++) {
+            const el = document.getElementById('e' + i);
+            if (el) el.innerText = t['e' + i];
+        }
+
+        // Переклад попереджень (червоний текст)
+        for (let i = 1; i <= 14; i++) {
+            const el = document.getElementById('w' + i);
+            if (el) el.innerText = t.warn;
+        }
+
+        document.getElementById('footer-text').innerText = t.footer;
+    }
+</script>
+
+</body>
+</html>
