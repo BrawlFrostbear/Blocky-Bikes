@@ -208,13 +208,38 @@
         </div>
     </div>
 
-    <div style="margin-top: 30px; text-align: center;">
+
+		<div class="card-grid">
+        <h2 class="section-title" id="h-Currency">Currency</h2>
+<div class="card">
+            <img src="Diamond_penny.png" style="width:25%; border-radius:5px;">
+            <h2 id="Diamond">Diamond penny</h2>
+			 <img src="Kraft4.png" style="width:90%; border-radius:5px;">
+        </div>
+		
+		<div class="card">
+            <img src="Gold_penny.png" style="width:25%; border-radius:5px;">
+            <h2 id="Gold">Gold penny</h2>
+			<img src="Kraft3.png" style="width:90%; border-radius:5px;">
+        </div>
+		
+		<div class="card">
+            <img src="Iron_penny.png" style="width:25%; border-radius:5px;">
+            <h2 id="Iron">Iron penny</h2>
+			<img src="Kraft2.png" style="width:90%; border-radius:5px;">
+        </div>
+		
+		<div class="card">
+            <img src="Wooden_penny.png" style="width:25%; border-radius:5px;">
+            <h2 id="Wooden">Wooden penny</h2>
+			<img src="Kraft1.png" style="width:90%; border-radius:5px;">
+        </div>
+		
+		    <div style="margin-top: 30px; text-align: center;">
         <a href="index.html"><img src="Return to home page.png" style="width:25%; border-radius:5px;"></a>
     </div>
 </div>
-
 <footer>
-    <p id="footer-text">© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️</p>
 </footer>
 
 <script>
@@ -224,6 +249,7 @@
         en: {
             hTitle: "Helmets",
             iTitle: "Items",
+            hCurrency: "Currency",
             helm1: "Sports Helmet",
             helm2: "Sports Helmet BMW",
             helm3: "Black Sports Helmet",
@@ -241,11 +267,15 @@
             item7: "Toolkit",
             item8: "Box",
             item9: "Boxing with Motorcycle",
-            footer: "© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️"
+            Diamond: "Diamond penny",
+            Gold: "Gold penny",
+            Iron: "Iron penny",
+            Wooden: "Wooden penny"
         },
         ua: {
             hTitle: "Шоломи",
             iTitle: "Предмети",
+            hCurrency: "Валюта",
             helm1: "Спортивний шолом",
             helm2: "Спортивний шолом BMW",
             helm3: "Чорний спортивний шолом",
@@ -263,7 +293,10 @@
             item7: "Набір інструментів",
             item8: "Коробка",
             item9: "Ящик з мотоциклом",
-            footer: "© 2025-2026 Blocky Bikes - BrawlFrostbear🏍️"
+            Diamond: "Діамантова копійка",
+            Gold: "Золота копійка",
+            Iron: "Залізна копійка",
+            Wooden: "Дерев'яна копійка"
         }
     };
 
@@ -274,25 +307,31 @@
 
     function updateContent() {
         const t = translations[currentLang];
+        
+        // Заголовки секцій
         document.getElementById('h-title').innerText = t.hTitle;
         document.getElementById('i-title').innerText = t.iTitle;
+        document.getElementById('h-Currency').innerText = t.hCurrency;
         
         // Переклад шоломів
         for (let i = 1; i <= 8; i++) {
-            document.getElementById('helm' + i).innerText = t['helm' + i];
+            const el = document.getElementById('helm' + i);
+            if(el) el.innerText = t['helm' + i];
         }
         
         // Переклад предметів
         for (let i = 1; i <= 9; i++) {
-            document.getElementById('item' + i).innerText = t['item' + i];
+            const el = document.getElementById('item' + i);
+            if(el) el.innerText = t['item' + i];
         }
 
-        document.getElementById('footer-text').innerText = t.footer;
+        // Переклад валюти
+        document.getElementById('Diamond').innerText = t.Diamond;
+        document.getElementById('Gold').innerText = t.Gold;
+        document.getElementById('Iron').innerText = t.Iron;
+        document.getElementById('Wooden').innerText = t.Wooden;
     }
 </script>
 
 </body>
 </html>
-
-<footer>
-   
